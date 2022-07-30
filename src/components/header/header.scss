@@ -1,0 +1,41 @@
+.header {
+    @include flex(row, center, space-between);
+    padding: 5px 15% 5px 15%;
+    height: 80px;
+    color: $gray;
+
+    &__logo {
+        cursor: pointer;
+        width: 20%;
+    }
+
+    &__menu {
+        @include flex(row, center, space-around);
+        width: 40%;
+        margin: 0 50px;
+
+        &-item {
+            width: fit-content;
+            font-size: 16px;
+        }
+
+        .menu_active {
+            color: $accent;
+        }
+    }
+
+    &__actions {
+        @include flex(row, center, space-around);
+        width: 30%;
+
+        button:last-of-type {
+            background-color: $white;
+            color: $gray;
+            border: 1px $gray solid;
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+}

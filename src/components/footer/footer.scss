@@ -1,0 +1,10 @@
+.footer {
+    @include flex(row, center, space-between);
+    padding: 10px 15%;
+    height: fit-content;
+    background-color: $gray;
+    color: $white;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: 'Roboto';
+}
